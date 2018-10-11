@@ -1,0 +1,16 @@
+<div class="modal-header" ng-show="!isConfirmation">
+	<h3 class="modal-title">{{ modalName }}</h3>
+</div>
+<div class="modal-body">
+	<p ng-show="!isConfirmation" ng-repeat="singleContent in content">{{
+		singleContent }}</p>
+	<span ng-show="isConfirmation">{{ message }}</span>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" type="button" ng-show="isConfirmation"
+		ng-click="ok()">{{ LABEL.OK }}</button>
+	<button class="btn btn-primary" type="button" ng-show="isConfirmation"
+		ng-click="cancel()">{{ LABEL.CANCEL }}</button>
+	<button class="btn btn-primary" type="button" ng-show="!isConfirmation"
+		ng-click="cancel()" autofocus>{{ LABEL.CLOSE }}</button>
+</div>

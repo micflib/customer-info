@@ -1,0 +1,52 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: Oct 08, 2018 at 02:31 PM
+-- Server version: 5.7.23
+-- PHP Version: 7.2.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `wunderdb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trx_customer`
+--
+
+DROP TABLE IF EXISTS `trx_customer`;
+CREATE TABLE IF NOT EXISTS `trx_customer` (
+  `FD_CUSTOMER_ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `FD_IBAN` bigint(255) DEFAULT NULL,
+  `FD_ACCNT_OWNER` varchar(255) DEFAULT NULL,
+  `FD_FNAME` varchar(50) DEFAULT NULL,
+  `FD_LNAME` varchar(50) DEFAULT NULL,
+  `FD_TEL_NO` smallint(10) DEFAULT NULL,
+  `FD_STREET_NO` varchar(50) DEFAULT NULL,
+  `FD_HOUSE_NO` varchar(50) DEFAULT NULL,
+  `FD_ZIP_CODE` bigint(255) DEFAULT NULL,
+  `FD_CITY` varchar(50) DEFAULT NULL,
+  `FD_PAYMENT_DATA_ID` varchar(255) DEFAULT NULL,
+  `FD_UPD_DATE` date NOT NULL,
+  `FD_VIEW` smallint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`FD_CUSTOMER_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,0 +1,41 @@
+<div id="content" cg-busy="contentPromise">
+	<h1>{{ LABEL.VIEW2 }}</h1>
+	<div class="clear-10"></div>
+
+	<table cellpadding="0" cellspacing="0" class="fields">
+		<tr>
+			<td><label>{{ LABEL.STREET_NO }}</label></td>
+			<td class="pad-5-l"><input class="form-control" type="text"
+				ng-model="IN_STREET_NO" mask="{{ CONSTANT.SERIAL_MASK }}" mask-restrict="reject" /></td>
+		</tr>
+		<tr>
+			<td><label>{{ LABEL.HOUSE_NO }}</label></td>
+			<td class="pad-5-l"><input class="form-control" type="text"
+				ng-model="IN_HOUSE_NO" mask="{{ CONSTANT.SERIAL_MASK }}" mask-restrict="reject" /></td>
+		</tr>
+		<tr>
+			<td><label>{{ LABEL.ZIP_CODE}}</label></td>
+			<td class="pad-5-l"><input class="form-control" type="text"
+				ng-model="IN_ZIP_CODE" mask="{{ CONSTANT.QTY_MASK }}"
+				mask-restrict="reject" /></td>
+		</tr>
+		<tr>
+			<td><label>{{ LABEL.CITY }}</label></td>
+			<td class="pad-5-l"><input class="form-control" type="text"
+				ng-model="IN_CITY" mask="{{ CONSTANT.SERIAL_MASK }}"
+				mask-restrict="reject" /></td>
+		</tr>
+	</table>
+
+	<div class="clear-10"></div>
+
+	<ul id="layoutRtl">
+		<li><input type="submit" name="BTN_Prev" value="{{ LABEL.PREV }}"
+			ng-click="prev()" id="BTN_Prev" class="btn btn-primary" /></li>
+		<li><input type="submit" name="BTN_Next" value="{{ LABEL.NEXT }}"
+			ng-click="next()" id="BTN_Next" class="btn btn-primary" /></li>
+		<li><input type="submit" name="BTN_Clear"
+			value="{{ LABEL.CLEAR }}" id="BTN_Clear" class="btn btn-primary"
+			ng-click="clear()" /></li>
+	</ul>
+</div>

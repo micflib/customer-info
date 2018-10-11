@@ -1,0 +1,20 @@
+<div id="content" cg-busy="contentPromise">
+	<h1>{{ LABEL.VIEW4 }}</h1>
+	<div class="clear-10"></div>
+
+	<table cellpadding="0" cellspacing="0" class="fields">
+		<tr>
+			<td><label>{{ LABEL.PAYMENT_ID }}</label></td>
+			<td class="pad-6-l"><input class="paymentId"
+				name="IN_PayMentID" type="text" ng-model="IN_PayMentID"
+				disabled="disabled" /></td>
+		</tr>
+	</table>
+	
+	<div class="clear-10"></div>
+	<ul id="layoutRtl">
+		<li><input type="submit" name="BTN_OK"
+			value="{{ LABEL.OK }}" id="BTN_OK" class="btn btn-primary"
+			ng-click="okay()" /></li> 
+	</ul>
+</div>

@@ -1,0 +1,34 @@
+<div id="content" cg-busy="contentPromise">
+	<h1>{{ LABEL.VIEW1 }}</h1>
+	<div class="clear-10"></div>
+
+	<table cellpadding="0" cellspacing="0" class="fields">
+		<tr>
+			<td><label>{{ LABEL.FNAME }}<required /></label></td>
+			<td class="pad-5-l"><input class="form-control" type="text"
+				ng-model="IN_FNAME" mask="{{ CONSTANT.SERIAL_MASK }}" mask-restrict="reject" /></td>
+		</tr>
+		<tr>
+			<td><label>{{ LABEL.LNAME }}<required /></label></td>
+			<td class="pad-5-l"><input class="form-control" type="text"
+				ng-model="IN_LNAME" mask="{{ CONSTANT.SERIAL_MASK }}" mask-restrict="reject" /></td>
+		</tr>
+		<tr>
+			<td><label>{{ LABEL.TEL_NO }}<required /></label></td>
+			<td class="pad-5-l"><input class="form-control" type="text"
+				ng-model="IN_TEL_NO" mask="{{ CONSTANT.QTY_MASK }}"
+				mask-restrict="reject" />
+				<small>Pattern: 123456789</small></td></td>
+		</tr>
+	</table>
+
+	<div class="clear-10"></div>
+
+	<ul id="layoutRtl">
+		<li><input type="submit" name="BTN_Next" value="{{ LABEL.NEXT }}"
+			ng-click="next()" id="BTN_Next" class="btn btn-primary" /></li>
+		<li><input type="submit" name="BTN_Clear"
+			value="{{ LABEL.CLEAR }}" id="BTN_Clear" class="btn btn-primary"
+			ng-click="clear()" /></li>
+	</ul>
+</div>
