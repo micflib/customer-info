@@ -45,11 +45,11 @@ $baseUrl = "http://localhost/customer-info/api";
 ```
 
 ## Impressions
-* Describe possible performance optimizations for your Code.   
-1 Apply caching strategy  
-2 Better HTTP request implementation
-3 ...
+* Describe possible performance optimizations for your Code.<br/>   
+1 Apply caching strategy<br/>  
+2 Better HTTP request implementation<br/>
+3 ...<br/>
 
-* Which things could be done better, than you’ve done it?   
-1 Better error handling for both front-end and back-end  
+* Which things could be done better, than you’ve done it?<br/>
+1 Better error handling for both front-end and back-end<br/>
 2 ...
