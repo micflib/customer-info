@@ -46,7 +46,7 @@ $baseUrl = "http://localhost/customer-info/api";
 
 ## Impressions
 * Describe possible performance optimizations for your Code.<br/>   
-1 Apply caching strategy<br/>  
+1 Apply caching strategy<br/>
 2 Better HTTP request implementation<br/>
 3 ...<br/>
 
