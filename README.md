@@ -21,6 +21,7 @@ https://github.com/micflib/customer-info.git
 ### Before Deployment:
 
 1 Create db and run trx_customer.sql
+
 2 Edit db config, api/config/db.php:
 ```
 <?php
